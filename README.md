@@ -5,8 +5,10 @@ Pwny dynamic extension.
 ## Build
 
 ```
-clang -fPIC -shared pext.c -o pext.so
+clang -fPIC -shared pext.c -o pext.so -Iinclude -L. -lpwny
 ```
+
+**NOTE:** You should build it with `libpwny.a`. This `include` is a path to Pwny headers.
 
 ## Usage
 
